@@ -6,6 +6,7 @@
 }
 
 body{
+    background-image: url(../component/as_1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
