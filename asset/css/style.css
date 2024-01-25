@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+    font-family: CALIST;
+}
+
+body{
+    background-image: url(../component/as_1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.section-1{
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wedding_couple_name{
+    position: absolute;
+    font-size: 5rem;
+    z-index: 15;
+}
+
+.section-1 img{
+    position: absolute;
+}
+
+.section-1 .banana_tree{
+    width: 250px;
+    right: 0;
+}
+.section-1 .banana_tree2{
+    width: 200px;
+    left: 45px;
+    bottom: 0;
+    z-index: 10;
+}
+.section-1 .banyan_tree{
+    width: 550px;
+    left: 0;
+    bottom: -35px;
+}
+
+.section-1 .bushes{
+    width: 100%;
+    bottom: -25%;
+    z-index: 5;
+}
+
+.section-1 .birds_on_tree{
+    width: 200px;
+    left: 30%;
+    top: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: CALIST;
+    src: url(../../font/CALIST.TTF);
+}
