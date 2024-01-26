@@ -88,7 +88,6 @@ body{
 
 @media only screen and (max-width: 412px) {
     .section-1{
-        /* overflow: hidden; */
         position: relative;
         display: flex;
         justify-content: center;
@@ -151,9 +150,129 @@ body{
     }
     .section-1 .moon{
         width: 45px;
-        /* left: 80px; */
         bottom: 120px;
-        right: 38%;
+        right: 40%;
+        z-index: -15;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .section-1{
+        overflow: hidden;
+    }
+    
+    .wedding_couple_name{
+        position: absolute;
+        font-size: 5rem;
+        z-index: 15;
+        display: none;
+    }
+
+    
+    .section-1 .banana_tree{
+        width: 80px;
+        right: 0;
+        bottom: 70px;
+        z-index: 5;
+    }
+    .section-1 .banana_tree2{
+        width: 70px;
+        left: 45px;
+        bottom: 0;
+        z-index: 10;
+    }
+    .section-1 .banyan_tree{
+        width: 220px;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .section-1 .bushes{
+        width: 100%;
+        z-index: 5;
+        bottom: -5px;
+    }
+    .section-1 .birds_on_tree{
+        width: 60px;
+        left: 170px;
+        top: 430px;
+
+    
+    }
+    
+    .section-1 .big_bushes{
+        width: 175px;
+    }
+    
+    .section-1 .candi{
+        width: 273px;
+        left: 0;
+        bottom: 35px;
+    }
+    .section-1 .moon{
+        width: 50px;
+        bottom: 110px;
+        right: 35%;
+        z-index: -15;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .section-1{
+        overflow: hidden;
+    }
+    
+    .wedding_couple_name{
+        position: absolute;
+        font-size: 5rem;
+        z-index: 15;
+        display: none;
+    }
+
+    
+    .section-1 .banana_tree{
+        width: 80px;
+        right: 0;
+        bottom: 70px;
+        z-index: 5;
+    }
+    .section-1 .banana_tree2{
+        width: 70px;
+        left: 45px;
+        bottom: 0;
+        z-index: 10;
+    }
+    .section-1 .banyan_tree{
+        width: 220px;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .section-1 .bushes{
+        width: 100%;
+        z-index: 5;
+        bottom: -5px;
+    }
+    .section-1 .birds_on_tree{
+        width: 60px;
+        left: 170px;
+        top: 470px;
+
+    
+    }
+    
+    .section-1 .big_bushes{
+        width: 175px;
+    }
+    
+    .section-1 .candi{
+        width: 250px;
+        left: 0;
+        bottom: 40px;
+    }
+    .section-1 .moon{
+        width: 47px;
+        bottom: 105px;
+        right: 35%;
         z-index: -15;
     }
 }
