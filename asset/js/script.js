@@ -22,7 +22,7 @@ window.addEventListener('scroll', () => {
         containerName.style.zIndex = 10;
         setTimeout(() => {
             birds.style.display = `block`
-        }, 500);  
+        }, 300);  
     }
 
     lastScrollTop = value
