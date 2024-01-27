@@ -57,8 +57,8 @@ body{
 
 .section-1 .birds_on_tree{
     width: 200px;
-    left: 32%;
-    top: 60px;
+    left: 37%;
+    top: 35px;
 
 }
 
@@ -87,6 +87,35 @@ body{
 }
 
 
+@media only screen and (max-width: 1280px) {
+   
+    
+    .section-1 .bushes{
+        width: 100%;
+        bottom: -20%;
+        z-index: 5;
+    }
+    
+    .section-1 .birds_on_tree{
+        width: 200px;
+        left: 38%;
+        top: 110px;
+    
+    }
+    
+    .section-1 .candi{
+        width: 80%;
+        left: -20px;
+        bottom: -70px;
+        z-index: -10;
+    }
+    .section-1 .moon{
+        width: 160px;
+        bottom: 220px;
+        right: 29%;
+        z-index: -15;
+    }
+}
 @media only screen and (max-width: 428px) {
     .section-1{
         position: relative;
