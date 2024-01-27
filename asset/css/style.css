@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: CALIST;
 }
 
@@ -10,6 +10,7 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 1000px;
 }
 
 .section-1{
@@ -21,12 +22,26 @@ body{
     height: 100vh;
 }
 
-.wedding_couple_name{
+
+.container_name{
     position: absolute;
-    font-size: 5rem;
-    z-index: 15;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 20px 60px 0px;
+    border-radius: 30px;
 }
 
+.container_name .wedding_couple_name{
+    font-size: 5rem;
+    color: #897044;
+    font-family: "Elsie Swash Caps", serif;
+    font-weight: 900;
+}
+.container_name .subtitle_couple_name{
+    font-size: 2rem;
+    color: #897044;
+    font-family: CALIST;
+}
 .section-1 img{
     position: absolute;
 }
@@ -59,6 +74,7 @@ body{
     width: 200px;
     left: 37%;
     top: 35px;
+    z-index: 15;
 
 }
 
@@ -75,8 +91,6 @@ body{
 }
 .section-1 .moon{
     width: 150px;
-    /* left: 80px; */
-    /* bottom: -60px; */
     right: 31%;
     z-index: -15;
 }
@@ -126,13 +140,20 @@ body{
     
     }
     
-    .wedding_couple_name{
+    .container_name{
         position: absolute;
-        font-size: 5rem;
         z-index: 15;
-        display: none;
+        background-color: unset;
+        top: 110px;
+        padding: 0;
     }
     
+    .container_name .wedding_couple_name{
+        font-size: 55px;
+    }
+    .container_name .subtitle_couple_name{
+        font-size: 28px;
+    }
     .section-1 img{
         position: absolute;
     }
@@ -196,11 +217,13 @@ body{
     
     }
     
-    .wedding_couple_name{
-        position: absolute;
-        font-size: 5rem;
-        z-index: 15;
-        display: none;
+    
+    
+    .container_name .wedding_couple_name{
+        font-size: 55px;
+    }
+    .container_name .subtitle_couple_name{
+        font-size: 28px;
     }
     
     .section-1 img{
@@ -257,6 +280,9 @@ body{
 }
 @media only screen and (max-width: 412px) {
     
+    .container_name{
+        top: 120px;
+    }
     .section-1 .birds_on_tree{
         width: 80px;
         left: 200px;
@@ -270,14 +296,15 @@ body{
         overflow: hidden;
     }
     
-    .wedding_couple_name{
-        position: absolute;
-        font-size: 5rem;
-        z-index: 15;
-        display: none;
-    }
-
     
+    
+    
+    .container_name .wedding_couple_name{
+        font-size: 50px;
+    }
+    .container_name .subtitle_couple_name{
+        font-size: 25px;
+    }
     .section-1 .banana_tree{
         width: 80px;
         right: 0;
@@ -349,11 +376,11 @@ body{
         overflow: hidden;
     }
     
-    .wedding_couple_name{
-        position: absolute;
-        font-size: 5rem;
-        z-index: 15;
-        display: none;
+    .container_name .wedding_couple_name{
+        font-size: 47px;
+    }
+    .container_name .subtitle_couple_name{
+        font-size: 23px;
     }
 
     
