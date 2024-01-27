@@ -20,7 +20,9 @@ window.addEventListener('scroll', () => {
 
     if (value < lastScrollTop) {
         containerName.style.zIndex = 10;
-        birds.style.display = `block`  
+        setTimeout(() => {
+            birds.style.display = `block`
+        }, 700);  
     }
 
     lastScrollTop = value
