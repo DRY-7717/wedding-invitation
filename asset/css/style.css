@@ -137,13 +137,15 @@ body{
     font-weight: bolder;
     color: #897044;
 }
-/* .section-4 .title-section-4{
-    /* font-size: 25px; */
-    
-} */
+.section-4 .img-section-4{
+   border-radius: 10px;
+   border: 3px solid #897044;
+}
+
 .section-4 .subtitle-section-4{
-    font-size: 20px;
+    font-size: 25px;
     text-align: justify;
+    font-weight: 700;
 }
 
 @font-face {
@@ -275,7 +277,24 @@ body{
     .section-3 .subtitle-section-3{
         font-size: 20px;
         text-align: justify;
-
+    }
+    .section-3 .subtitle-section-3{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .section-4 .bigtitle-section-4{
+        font-size: 50px;
+        font-weight: bolder;
+        color: #897044;
+    }
+    .section-4 .title-section-4{
+        font-size: 35px;
+    }
+    .section-4 .subtitle-section-4{
+        font-size: 20px;
+    }
+    .section-4 .mempelai{
+        font-size: 28px;
     }
 }
 
@@ -327,7 +346,7 @@ body{
     }
     
     .section-1 .birds_on_tree{
-        width: 130px;
+        width: 80px;
         left: 200px;
         top: 430px;
 
@@ -506,5 +525,8 @@ body{
     .section-3 .title-section-3{
         font-size: 49px;
         text-align: center;
+    }
+    .section-4 .title-section-4{
+        font-size: 32px;
     }
 }
