@@ -137,10 +137,10 @@ body{
     font-weight: bolder;
     color: #897044;
 }
-.section-4 .title-section-4{
+/* .section-4 .title-section-4{
     /* font-size: 25px; */
     
-}
+} */
 .section-4 .subtitle-section-4{
     font-size: 20px;
     text-align: justify;
@@ -327,7 +327,7 @@ body{
     }
     
     .section-1 .birds_on_tree{
-        width: 80px;
+        width: 130px;
         left: 200px;
         top: 430px;
 
