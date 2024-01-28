@@ -637,6 +637,7 @@ body{
     }
     .section-4 .title-section-4{
         font-size: 20px;
+        display: none;
     }
 }
 @media only screen and (max-width: 412px) {
