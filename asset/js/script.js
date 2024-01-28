@@ -3,8 +3,15 @@ let banyan = document.querySelector(".section-1  .banyan_tree");
 let bigBushes = document.querySelector(".section-1  .big_bushes");
 let birds = document.querySelector(".section-1 .birds_on_tree");
 let lastScrollTop = 0;
+let userclickbutton = false;
+let iconWrapper = document.querySelector(".audio-icon-wrapper");
+let lihatUndangan = document.querySelector(".lihat-undangan");
+let isPlaying = false;
+const audioIcon = document.querySelector('.audio-icon-wrapper i')
+const song = document.getElementById("song");
 
 window.addEventListener("scroll", () => {
+  handleClickButton();
   let value = window.scrollY;
   containerName.style.marginTop = value * 2.5 + "px";
   containerName.style.zIndex = 2;
@@ -19,19 +26,40 @@ window.addEventListener("scroll", () => {
     }, 200);
   }
   lastScrollTop = value;
-  playAudio()
+});
+
+function handleClickButton() {
+  if (!userclickbutton) {
+    window.scrollTo(0, 0);
+  }
+}
+
+lihatUndangan.addEventListener("click", () => {
+  userclickbutton = true;
+  window.removeEventListener("scroll", handleClickButton);
+  playAudio();
 });
 
 
-function playAudio( ) {
-    const song = document.getElementById('song')
-    song.play();
+function playAudio() {
+  song.play();
+  iconWrapper.style.display = "flex";
+  isPlaying = true;
 }
 
+iconWrapper.addEventListener('click', () => {
+    if (isPlaying === true) {
+        song.pause()
+        audioIcon.classList.remove('bi-disc')
+        audioIcon.classList.add('bi-pause-circle')
+    } else {
+        song.play()
+        audioIcon.classList.add('bi-disc')
+        audioIcon.classList.remove('bi-pause-circle')
+    }
 
-
-
-
+    isPlaying = !isPlaying
+})
 
 const tanggalTujuan = new Date("Feb 4, 2024 09:00:00").getTime();
 let hitungMundur = setInterval(() => {
@@ -61,3 +89,12 @@ let hitungMundur = setInterval(() => {
     detik.innerHTML = "00";
   }
 }, 1000);
+
+
+const urlParams = new URLSearchParams(window.location.search);
+const namaTamuUndangan = document.querySelector('.nama-tamu-undangan')
+const nama = urlParams.get('to') || '-'
+
+namaTamuUndangan.innerHTML = nama
+
+console.log(nama);

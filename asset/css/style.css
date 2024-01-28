@@ -225,6 +225,19 @@ body{
     line-height: 0;
 }
 
+.lihat-undangan{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #897044;
+    width: 180px;
+    font-size: 18px;
+    margin:  0px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
 @keyframes rotating{
     from{
         transform: rotate(0);
@@ -283,7 +296,7 @@ body{
         position: absolute;
         z-index: 15;
         background-color: unset;
-        top: 110px;
+        top: 55px;
         padding: 0;
     }
     
@@ -410,7 +423,9 @@ body{
         height: 100vh;
     
     }
-    
+    .container_name{
+        top: 45px;
+    }
     
     
     .container_name .wedding_couple_name{
@@ -475,7 +490,7 @@ body{
 @media only screen and (max-width: 412px) {
     
     .container_name{
-        top: 120px;
+        top: 100px;
     }
     .section-1 .birds_on_tree{
         width: 80px;
@@ -490,7 +505,9 @@ body{
         overflow: hidden;
     }
     
-    
+    .container_name{
+        top: 55px;
+    }
     
     
     .container_name .wedding_couple_name{
@@ -547,6 +564,9 @@ body{
     }
 }
 @media only screen and (max-width: 375px) {
+    .container_name{
+        top: 45px;
+    }
     .section-1 .birds_on_tree{
         width: 60px;
         left: 167px;
@@ -571,6 +591,9 @@ body{
 @media only screen and (max-width: 360px) {
     .section-1{
         overflow: hidden;
+    }
+    .container_name{
+        top: 65px;
     }
     
     .container_name .wedding_couple_name{
