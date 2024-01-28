@@ -429,6 +429,147 @@ body{
     }
 }
 
+@media screen and (max-width: 768px) {
+    .section-1{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    
+    }
+    
+    .container_name{
+        position: absolute;
+        z-index: 15;
+        background-color: unset;
+        top: 55px;
+        padding: 0;
+    }
+    
+    .container_name .wedding_couple_name{
+        font-size: 25px;
+    }
+    .container_name .subtitle_couple_name{
+        font-size: 18px;
+    }
+    .section-1 img{
+        position: absolute;
+    }
+    
+    .section-1 .banana_tree{
+        width: 100px;
+        right: 0;
+        bottom: 70px;
+        z-index: 5;
+    }
+    .section-1 .banana_tree2{
+        width: 80px;
+        left: 45px;
+        bottom: 0;
+        z-index: 10;
+    }
+    .section-1 .banyan_tree{
+        width: 270px;
+        left: 0;
+        bottom: 0;
+    }
+    
+    .section-1 .bushes{
+        width: 100%;
+        z-index: 5;
+        bottom: 0;
+    }
+    
+    .section-1 .birds_on_tree{
+        width: 80px;
+        left: 200px;
+        top: 450px;
+
+    
+    }
+    
+    .section-1 .big_bushes{
+        width: 200px;
+    }
+    
+    .section-1 .candi{
+        width: 300px;
+        left: 0px;
+        bottom: 47px;
+    }
+    .section-1 .moon{
+        width: 55px;
+        bottom: 130px;
+        right: 35%;
+        z-index: -15;
+    }
+    .title-wedding-invitation{
+        font-size: 50px;
+    }
+    .subtitle-wedding-invitation{
+        font-size: 20px;
+        color: #897044;
+        font-weight: 600;
+        text-align: justify;
+    }
+    .section-2 .img-wedding-invitation{
+        width: 100%;
+    }
+    .section-3 .title-section-3{
+        font-size: 25px;
+        text-align: center;
+    }
+    .section-3 .subtitle-section-3{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .section-3 .subtitle-section-3{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .section-4 .bigtitle-section-4{
+        font-size: 30px;
+        font-weight: bolder;
+        color: #897044;
+    }
+    .section-4 .title-section-4{
+        font-size: 25px;
+    }
+    .section-4 .subtitle-section-4{
+        font-size: 15px;
+    }
+    .section-4 .mempelai{
+        font-size: 18px;
+    }
+    .section-5 .title-section-5{
+        font-size: 25px;
+    }
+    .section-5 .subtitle-section-5{
+        font-size: 15px;
+    }
+    .waktu-acara, .date, .waktu{
+        text-align: center;
+    }
+    .waktu{
+        font-size: 15px;
+    }
+    .waktu-acara{
+        font-size: 15px;
+    }
+    .date{
+        font-size: 15px;
+    }
+    .section-6 .title-section-6{
+        font-size: 25px;
+        font-weight: bolder;
+        color: #897044;
+    }
+    .section-7 .title-section-7{
+        font-size: 25px;
+    }
+}
+
 @media only screen and (max-width: 576px) {
     .section-1{
         position: relative;
