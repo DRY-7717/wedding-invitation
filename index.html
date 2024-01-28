@@ -265,7 +265,7 @@
                             <label for="keterangan" class="form-label">Konfirmasi Kehadiran</label>
                             <select class="form-select keterangan-rsvp" aria-label="Default select example"
                                 name="keterangan">
-                                <option selected disabled>Pilih opsi</option>
+                                <option selected disabled value="-">Pilih opsi</option>
                                 <option value="hadir">hadir</option>
                                 <option value="tidak hadir">Tidak hadir</option>
                             </select>
@@ -275,8 +275,14 @@
                             <textarea class="form-control pesan-rsvp" id="exampleFormControlTextarea1" name="pesan"
                                 rows="3"></textarea>
                         </div>
-                        <button type="submit" class="w-100 kirim"
+                        <button type="submit" class="w-100 btn-kirim"
                             style="background-color: #897044; color: white; padding: 7px 0px; border-radius: 5px; border: none; outline: none;">Submit</button>
+                        <button class="w-100 btn-loading d-none"
+                            style="background-color: #897044; color: white; padding: 7px 0px; border-radius: 5px; border: none; outline: none;"
+                            type="button" disabled>
+                            <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                            <span role="status">Loading...</span>
+                        </button>
                     </form>
                 </div>
 
@@ -294,7 +300,7 @@
 
     <div id="audio-container">
         <audio id="song" autoplay loop>
-            <source src="asset/audio/just-pretend.mp3" type="audio/mp3">
+            <source src="asset/audio/westlife.mp3" type="audio/mp3">
         </audio>
         <div class="audio-icon-wrapper" style="display: none;">
             <i class="bi bi-disc"></i>
@@ -317,7 +323,8 @@
         let namarsvp = document.querySelector('.nama-rsvp')
         let keteranganrsvp = document.querySelector('.keterangan-rsvp')
         let pesanrsvp = document.querySelector('.pesan-rsvp')
-        let kirimrsvp = document.querySelector('.kirim')
+        let btnKirim = document.querySelector('.btn-kirim')
+        let btnLoading = document.querySelector('.btn-loading')
         let contentRsvp = document.querySelector('.content-rsvp')
 
         namarsvp.value = nama
@@ -355,23 +362,31 @@
             formData.append('keterangan', keteranganrsvp.value);
             formData.append('pesan', pesanrsvp.value);
 
+            btnKirim.classList.add('d-none')
+            btnLoading.classList.remove('d-none')
+
             // Make a POST request
             axios.post('https://pmiicabangciputattrial.000webhostapp.com/api/rsvp', formData)
                 .then(function (response) {
                     console.log('Form submitted successfully');
                     // Optionally, you can update the content without refreshing
                     fetctData();
+
                 })
                 .catch(function (error) {
                     console.error('Error submitting form', error);
+                }).finally(function () {
+                    btnKirim.classList.remove('d-none')
+                    btnLoading.classList.add('d-none')
                 });
+
+            pesanrsvp.value = ''
         }
 
         // Attach event listener to form submission
         document.querySelector('form').addEventListener('submit', submitForm);
-        console.log(document.querySelector('form'));
 
-        setInterval(fetctData, 3000);
+        setInterval(fetctData, 2300);
 
 
     </script>
