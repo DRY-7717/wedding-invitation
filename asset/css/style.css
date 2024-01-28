@@ -294,7 +294,7 @@ body{
         z-index: -15;
     }
 }
-@media only screen and (max-width: 1125px) {
+@media only screen and (max-width: 728px) {
     .section-1{
         position: relative;
         display: flex;
@@ -399,7 +399,7 @@ body{
         color: #897044;
     }
     .section-4 .title-section-4{
-        font-size: 35px;
+        font-size: 20px;
     }
     .section-4 .subtitle-section-4{
         font-size: 20px;
