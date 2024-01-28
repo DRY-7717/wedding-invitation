@@ -568,6 +568,9 @@ body{
     .section-7 .title-section-7{
         font-size: 25px;
     }
+    .audio-icon-wrapper{
+        bottom: 2rem;
+    }
 }
 
 @media only screen and (max-width: 576px) {
