@@ -12,7 +12,7 @@ const audioIcon = document.querySelector('.audio-icon-wrapper i')
 const song = document.getElementById("song");
 
 window.addEventListener("scroll", () => {
-  // handleClickButton();
+  handleClickButton();
   let value = window.scrollY;
   containerName.style.marginTop = value * 2.5 + "px";
   containerName.style.zIndex = 2;

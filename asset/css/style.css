@@ -10,7 +10,6 @@ body{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 1000px;
     color: #897044;
 }
 
@@ -249,6 +248,9 @@ body{
     font-size: 60px;
     font-weight: bolder;
     color: #897044;
+}
+.content-rsvp{
+    height: 600px;
 }
 
 @keyframes rotating{
