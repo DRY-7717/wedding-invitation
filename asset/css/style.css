@@ -533,7 +533,7 @@ body{
         color: #897044;
     }
     .section-4 .title-section-4{
-        font-size: 35px;
+        font-size: 20px;
     }
     .section-4 .subtitle-section-4{
         font-size: 20px;
@@ -635,6 +635,9 @@ body{
         right: 38%;
         z-index: -15;
     }
+    .section-4 .title-section-4{
+        font-size: 20px;
+    }
 }
 @media only screen and (max-width: 412px) {
     
@@ -646,6 +649,10 @@ body{
         left: 200px;
         top: 530px;
     
+        
+    }
+    .section-4 .title-section-4{
+        font-size: 20px;
     }
 }
 
