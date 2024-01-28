@@ -569,7 +569,7 @@ body{
         font-size: 25px;
     }
     .audio-icon-wrapper{
-        bottom: 2rem;
+        bottom: 2.5rem;
     }
 }
 
@@ -851,6 +851,9 @@ body{
     }
     .section-7 .title-section-7{
         font-size: 25px;
+    }
+    .audio-icon-wrapper{
+        bottom: 3.5rem;
     }
 }
 
