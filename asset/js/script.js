@@ -6,24 +6,32 @@ let lastScrollTop = 0;
 
 window.addEventListener("scroll", () => {
   let value = window.scrollY;
-  var lebarLayar = window.innerWidth;
-
   containerName.style.marginTop = value * 2.5 + "px";
   containerName.style.zIndex = 2;
 
   banyan.style.left = `-${value * 1.5}px`;
   birds.style.display = `none`;
   bigBushes.style.right = `-${value * 1.5}px`;
-
   if (value < lastScrollTop) {
     containerName.style.zIndex = 10;
     setTimeout(() => {
       birds.style.display = `block`;
     }, 200);
   }
-
   lastScrollTop = value;
+  playAudio()
 });
+
+
+function playAudio( ) {
+    const song = document.getElementById('song')
+    song.play();
+}
+
+
+
+
+
 
 const tanggalTujuan = new Date("Feb 4, 2024 09:00:00").getTime();
 let hitungMundur = setInterval(() => {

@@ -208,6 +208,32 @@ body{
     margin-top: -30px;
     font-weight: bold;
 }
+
+.audio-icon-wrapper{
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.8rem;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.3rem;
+    cursor: pointer;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 @font-face {
     font-family: CALIST;
     src: url(../../font/CALIST.TTF);
