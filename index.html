@@ -248,6 +248,42 @@
         </div>
     </section>
     <img src="asset/component/as_3.png" alt="" class="w-100">
+    <img src="asset/component/as_3.png" alt="" class="w-100 bushes-wedding-invitation">
+    <section class="section-7 py-5" id="rsvp">
+        <div class="container">
+            <h1 class="title-section-7 mb-3 text-center" data-aos="fade-down" data-aos-duration="700">
+                Rsvp</h1>
+            <p class="text-center fs-lg-2 fs-4 mb-5">Silahkan beri pesan kalian untuk kami</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-4 mb-4" data-aos="fade-down" data-aos-duration="700" data-aos-delay="200">
+                    <form action="http://127.0.0.1:8000/api/rsvp" method="post">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama</label>
+                            <input type="text" class="form-control nama-rsvp" id="nama" name="nama">
+                        </div>
+                        <div class="mb-3">
+                            <label for="keterangan" class="form-label">Konfirmasi Kehadiran</label>
+                            <select class="form-select keterangan-rsvp" aria-label="Default select example"
+                                name="keterangan">
+                                <option selected disabled>Pilih opsi</option>
+                                <option value="hadir">hadir</option>
+                                <option value="tidak hadir">Tidak hadir</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pesan" class="form-label">Pesan</label>
+                            <textarea class="form-control pesan-rsvp" id="exampleFormControlTextarea1" name="pesan"
+                                rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="w-100 kirim"
+                            style="background-color: #897044; color: white; padding: 7px 0px; border-radius: 5px; border: none; outline: none;">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <img src="asset/component/as_3.png" alt="" class="w-100">
 
     <div id="audio-container">
         <audio id="song" autoplay loop>
@@ -262,9 +298,26 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
     <script src="asset/js/script.js"></script>
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        let namarsvp = document.querySelector('.nama-rsvp')
+        let keteranganrsvp = document.querySelector('.keterangan-rsvp')
+        let pesanrsvp = document.querySelector('.pesan-rsvp')
+        let kirimrsvp = document.querySelector('.kirim')
+
+        namarsvp.value = nama
+
+        kirimrsvp.addEventListener('click', function () {
+           document.location.href = `http://localhost:5500/?to=${nama}`
+        })
+
     </script>
 
 </body>
