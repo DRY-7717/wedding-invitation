@@ -7,6 +7,7 @@ let userclickbutton = false;
 let iconWrapper = document.querySelector(".audio-icon-wrapper");
 let lihatUndangan = document.querySelector(".lihat-undangan");
 let isPlaying = false;
+let nav = document.querySelector('.wedding-nav')
 const audioIcon = document.querySelector('.audio-icon-wrapper i')
 const song = document.getElementById("song");
 
@@ -37,6 +38,7 @@ function handleClickButton() {
 lihatUndangan.addEventListener("click", () => {
   userclickbutton = true;
   window.removeEventListener("scroll", handleClickButton);
+  nav.style.display = 'block'
   playAudio();
 });
 

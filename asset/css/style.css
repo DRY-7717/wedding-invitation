@@ -237,6 +237,18 @@ body{
     border-radius: 5px;
     margin-bottom: 20px;
 }
+.wedding-nav{
+    background-color: #897044;
+    color: white;
+    z-index: 4;
+    display: none;
+}
+
+.section-7 .title-section-7{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #897044;
+}
 
 @keyframes rotating{
     from{
@@ -411,6 +423,9 @@ body{
         font-size: 50px;
         font-weight: bolder;
         color: #897044;
+    }
+    .section-7 .title-section-7{
+        font-size: 50px;
     }
 }
 
